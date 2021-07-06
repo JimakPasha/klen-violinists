@@ -1,0 +1,65 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header{
+	background-color: rgba(0, 0, 0, 0.67);
+	color: $link;
+	backdrop-filter: blur(6px);
+	&__inner{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.header-home{
+	width: 100%;
+	height: 135px;
+	border-top: 1px solid #3F3F3F;
+	border-bottom: 1px solid #3F3F3F;
+	font-size: 20px;
+	line-height: 37px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	.menu{
+		padding: 45px 0;
+		&__list-item + .menu__list-item{
+			margin-left: 58px;
+		}
+	}
+	.logo{
+		margin-right: 50px;
+	}
+}
+
+.menu{
+	&__list{
+		display: flex;
+	}
+	&__list-link,
+	&__list-sub-link,
+	&__list-sub--hover{
+		cursor: pointer;
+		transition: all .3s;
+		&:hover{
+			text-shadow: 0px 0px 10px #fff;
+		}
+	}
+	&__list-sub{
+		display: none;
+	}
+}
+
+.home-screen{
+	width: 100wh;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+@import 'media';
