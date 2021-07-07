@@ -3,8 +3,9 @@ body{
   height: 100%;
 }
 
-body{
+.body{
   color: $default;
+	background-color: $bg;
   font-size: 28px;
   line-height: 33px;
   display: flex;
@@ -19,4 +20,78 @@ body{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.title{
+		font-size: 36px;
+		line-height: 66px;
+		margin-bottom: 21px;
+		text-align: center;
+}
+
+.header{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.91);;
+	color: $link;
+	&__inner{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+.menu{
+	padding: 26px 0;
+	&__list{
+		display: flex;
+	}
+	&__list-item + .menu__list-item{
+		margin-left: 30px;
+	}
+	&__list-link,
+	&__list-sub-link,
+	&__list-sub--hover{
+		font-size: 20px;
+		line-height: 37px;
+		cursor: pointer;
+		transition: text-shadow .3s;
+		&:hover{
+			text-shadow: 0px 0px 10px #fff;
+		}
+	}
+	&__list-sub{
+		display: none;
+	}
+}
+
+.footer{
+	background-color: rgba(0, 0, 0, 0.91);
+	padding: 30px 0;
+	color: #fff;
+	font-size: 18px;
+	line-height: 24px;
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__menu-item{
+		margin-bottom: 8px;
+	}
+	&__menu-item:last-child{
+		margin-bottom: 0;
+	}
+	&__contacts-title{
+		font-size: 24px;
+		line-height: 36px;
+	}
+	&__menu-link,
+	&__contacts-phones-link{
+		transition: text-shadow .3s;
+		&:hover{
+			text-shadow: 0px 0px 10px #fff;
+		}
+	}
 }

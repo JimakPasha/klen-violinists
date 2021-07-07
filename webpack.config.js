@@ -7,6 +7,13 @@ const TerserWebpackPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const htmlPageNames = ['index', 'about', 'performances', 'pedagogy'];
+const multipleHtmlPlugins = htmlPageNames.map(name => {
+	return new HtmlWebpackPlugin({
+		template: `./${name}.html`,
+		filename: `${name}.html`,
+	});
+});
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -31,7 +38,7 @@ const optimization = () => {
 const plugins = () => {
 	const base = [
 		new HtmlWebpackPlugin({
-			template: './index.html'
+			template: './index.html', 
 		}),
 		new CleanWebpackPlugin({
 			cleanStaleWebpackAssets: false
@@ -44,7 +51,7 @@ const plugins = () => {
 				{ from: path.resolve(__dirname, 'src/assets'), to: path.resolve(__dirname, 'dist/assets') }
 			],
 		})
-	]
+	].concat(multipleHtmlPlugins);
 
 	if (isProd) {
 		base.push(new BundleAnalyzerPlugin());
