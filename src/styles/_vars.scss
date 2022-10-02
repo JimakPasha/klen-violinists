@@ -2,3 +2,48 @@ $default: #060606;
 $link: #fff;
 $accent: #864621;
 $bg: #f5ede8;
+
+%lato-300{
+  font-family: 'Lato-Light', sans-serif;
+  font-weight: 300;
+}
+
+%lato-400{
+  font-family: 'Lato-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%lato-700{
+  font-family: 'Lato-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%lato-900{
+  font-family: 'Lato-Black', sans-serif;
+  font-weight: 900;
+}
+
+%CormorantGaramond-300{
+  font-family: 'CormorantGaramond-Light', sans-serif;
+  font-weight: 300;
+}
+
+%CormorantGaramond-400{
+  font-family: 'CormorantGaramond-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%CormorantGaramond-500{
+  font-family: 'CormorantGaramond-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%CormorantGaramond-600{
+  font-family: 'CormorantGaramond-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%CormorantGaramond-700{
+  font-family: 'CormorantGaramond-Bold', sans-serif;
+  font-weight: 700;
+}

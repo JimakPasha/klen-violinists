@@ -1,7 +1,5 @@
 'use strict';
-
 import './styles/style.scss';
 
-console.log('go');
-console.log('go');
-console.log('go');
+const offset = 100;
+const backTop = document.querySelector('back-top');

@@ -7,7 +7,7 @@ const TerserWebpackPlugin = require('terser-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const htmlPageNames = ['index', 'about', 'performances', 'pedagogy'];
+const htmlPageNames = ['index', 'about', 'performances', 'pedagogy', 'prices'];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HtmlWebpackPlugin({
 		template: `./${name}.html`,
@@ -91,6 +91,10 @@ module.exports = {
 			},
 			{
 				test: /\.(png|jpg|svg|gif)$/,
+				use: ['file-loader']
+			},
+			{
+				test: /\.(ttd|woff|woff2|eot)$/,
 				use: ['file-loader']
 			}
 		]

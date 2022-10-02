@@ -23,10 +23,10 @@ body{
 }
 
 .title{
-		font-size: 36px;
-		line-height: 66px;
-		margin-bottom: 21px;
-		text-align: center;
+	font-size: 36px;
+	line-height: 66px;
+	margin-bottom: 21px;
+	text-align: center;
 }
 
 .header{
@@ -67,6 +67,7 @@ body{
 }
 
 .footer{
+	z-index: 99;
 	background-color: rgba(0, 0, 0, 0.91);
 	padding: 30px 0;
 	color: #fff;
@@ -93,5 +94,31 @@ body{
 		&:hover{
 			text-shadow: 0px 0px 10px #fff;
 		}
+	}
+}
+
+.back-top{
+	width: 223px;
+	height: 100%;
+	background-color: rgba(235, 213, 203, 0);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 98;
+	cursor: pointer;
+	transition: all .5s;
+	&:hover{
+		background-color: rgba(235, 213, 203, 0.3);
+	}
+	&__inner{
+		margin-top: 45px;
+		display: flex;
+		justify-content: center;
+	}
+	&__text{
+		font-size: 18px;
+		line-height: 25px;
+		color: #000;
+		margin-left: 5px;
 	}
 }

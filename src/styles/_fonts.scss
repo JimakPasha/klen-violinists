@@ -1,0 +1,89 @@
+@font-face{
+  font-family: 'Lato-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Lato-Light.woff2'),
+  url('../assets/fonts/Lato-Light.woff2') format('woff2'),
+  url('../assets/fonts/Lato-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Lato-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Lato-Regular.woff2'),
+  url('../assets/fonts/Lato-Regular.woff2') format('woff2'),
+  url('../assets/fonts/Lato-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Lato-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Lato-Bold.woff2'),
+  url('../assets/fonts/Lato-Bold.woff2') format('woff2'),
+  url('../assets/fonts/Lato-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Lato-Black';
+  font-weight: 900;
+  font-style: normal;
+  src: local('Lato-Black.woff2'),
+  url('../assets/fonts/Lato-Black.woff2') format('woff2'),
+  url('../assets/fonts/Lato-Black.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'CormorantGaramond-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Lato-Black.woff2'),
+  url('../assets/fonts/CormorantGaramond-Light.woff2') format('woff2'),
+  url('../assets/fonts/CormorantGaramond-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'CormorantGaramond-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Lato-Black.woff2'),
+  url('../assets/fonts/CormorantGaramond-Regular.woff2') format('woff2'),
+  url('../assets/fonts/CormorantGaramond-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'CormorantGaramond-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Lato-Black.woff2'),
+  url('../assets/fonts/CormorantGaramond-Medium.woff2') format('woff2'),
+  url('../assets/fonts/CormorantGaramond-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'CormorantGaramond-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Lato-Black.woff2'),
+  url('../assets/fonts/CormorantGaramond-SemiBold.woff2') format('woff2'),
+  url('../assets/fonts/CormorantGaramond-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'CormorantGaramond-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Lato-Black.woff2'),
+  url('../assets/fonts/CormorantGaramond-Bold.woff2') format('woff2'),
+  url('../assets/fonts/CormorantGaramond-Bold.woff') format('woff');
+  font-display: swap;
+}

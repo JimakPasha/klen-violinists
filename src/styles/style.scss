@@ -262,5 +262,33 @@
 	}
 }
 
+.prices{
+	padding: 110px 0 77px;
+	&__title{
+		margin-bottom: 0;
+		line-height: 40px;
+	}
+	&__text{
+		font-size: 18px;
+		line-height: 20px;
+		text-align: center;
+		margin-bottom: 37px;
+	}
+	&__box{
+		max-width: 856px;
+		padding: 55px 30px;
+		margin: 0 auto;
+		background-color: #fffaf8;
+		box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.09);
+	}
+}
+
+.ooo {
+	position: absolute;
+	top: -100px;
+	left: 100px;
+	z-index: 1000;
+}
+
 
 @import 'media';
